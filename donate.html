@@ -114,7 +114,7 @@
           <p class="section-subtitle">Secure and simple. Your information is protected.</p>
         </header>
 
-        <form class="donate-form animate-fade-up animate-delay-1" novalidate>
+        <form class="donate-form animate-fade-up animate-delay-1" novalidate data-endpoint="/api/donations">
           <div class="form-row">
             <div class="form-group">
               <label for="first-name">First Name *</label>
@@ -133,7 +133,7 @@
 
           <div class="form-group">
             <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" autocomplete="tel">
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+234 800 000 0000">
           </div>
 
           <div class="form-group">
@@ -149,7 +149,7 @@
 
           <div class="form-group">
             <label for="amount">Amount (₦) *</label>
-            <input type="number" id="amount" name="amount" required min="1000" step="1000" placeholder="Enter amount">
+            <input type="number" id="amount" name="amount" required min="1000" step="1000" placeholder="Enter amount" autocomplete="off">
           </div>
 
           <div class="form-group">
